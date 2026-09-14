@@ -1,0 +1,20 @@
+ANALISI POLARIZZAZIONE ONDE DI SUPERFICIE - M7.6 Alaska 2020-10-19
+Banda: 20-100 s   Location: 00
+
+IU.ANMO: Δ=41.4° (4603 km), BAZ=315°
+  P=464s  S=837s  Love 1001-1180s  Rayleigh 1123-1438s
+  Rayleigh: Δφ(Z-R)=-92.5°  H/V=0.85  moto retrogrado  planarità=0.53  E_T/E_tot=0.53
+  Love:     E_T/E_tot=0.97  rettilinearità=0.99
+  PGV (banda): Z=107.2  R=86.8  T=151.1 µm/s
+
+IU.TUC: Δ=40.8° (4540 km), BAZ=318°
+  P=459s  S=829s  Love 987-1164s  Rayleigh 1107-1419s
+  Rayleigh: Δφ(Z-R)=-93.2°  H/V=0.84  moto retrogrado  planarità=0.69  E_T/E_tot=0.15
+  Love:     E_T/E_tot=0.97  rettilinearità=0.99
+  PGV (banda): Z=236.7  R=197.1  T=160.3 µm/s
+
+IU.HRV: Δ=55.7° (6198 km), BAZ=315°
+  P=574s  S=1039s  Love 1347-1589s  Rayleigh 1512-1937s
+  Rayleigh: Δφ(Z-R)=-82.9°  H/V=0.82  moto retrogrado  planarità=0.84  E_T/E_tot=0.76
+  Love:     E_T/E_tot=0.93  rettilinearità=0.97
+  PGV (banda): Z=153.7  R=139.8  T=256.7 µm/s
