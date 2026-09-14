@@ -11,10 +11,10 @@ produce figure e un'animazione 3D della propagazione.
 
 | File | Descrizione |
 |---|---|
-| `Download dati sismici M7.6 Alaska 19 ottobre 2020.py` | Scarica forme d'onda (BH1/BH2/BHZ) e StationXML per IU.ANMO, IU.TUC, IU.HRV dai servizi FDSN EarthScope |
+| `Download dati sismici M7.6 Alaska 19 ottobre 2020.py` | Scarica miniSEED continui (BH1/BH2/BHZ; BH3 richiesto ma non esistente per queste stazioni, viene segnalato) e StationXML per IU.ANMO, IU.TUC, IU.HRV, 19/10/2020 20:54–22:20 UTC, dai servizi FDSN EarthScope; verifica la continuità di ogni traccia e salva gli URL usati in `seismic_data/download_urls.txt` |
 | `analisi_polarizzazione.py` | Rimozione risposta strumentale, rotazione ZNE→ZRT, filtro 20–100 s, finestre Love/Rayleigh, misura di sfasamento Z–R, ellitticità H/V, senso di rotazione, energia T/(R+Z) |
 | `animazione_onde.py` | Animazione 3D: globo con fronti d'onda P/S/Love/Rayleigh, moto del suolo per stazione, inviluppo di energia |
-| `seismic_data/` | Dati grezzi scaricati (miniSEED + StationXML) |
+| `seismic_data/` | Dati grezzi scaricati (miniSEED + StationXML) e `download_urls.txt` con tutti gli URL FDSN richiesti (esito HTTP, dimensione, file di destinazione) |
 | `risultati_polarizzazione/` | Figure PNG, GIF animata e `report.txt` con i risultati numerici |
 
 ## Stazioni

@@ -1,0 +1,297 @@
+# URL usati per il download dei dati sismici
+# Terremoto M7.6 Alaska (Sand Point) - 19 ottobre 2020, 20:54:39 UTC
+# Intervallo richiesto: 2020-10-19T20:54:00.000000Z -> 2020-10-19T22:20:00.000000Z
+# Servizio: EarthScope FDSN Web Services (https://service.earthscope.org)
+# Generato il: 2026-09-14 08:27:20 UTC
+# Canali richiesti: BH1, BH2, BH3, BHZ
+# Richieste totali: 43 - riuscite: 35
+
+# Canali richiesti NON disponibili (assenti nei metadati; download dataselect tentato, vedi esito HTTP sotto):
+#   IU.ANMO.00.BH3
+#   IU.ANMO.10.BH3
+#   IU.TUC.00.BH3
+#   IU.TUC.10.BH3
+#   IU.TUC.60.BH3
+#   IU.HRV.00.BH3
+#   IU.HRV.10.BH3
+#   IU.HRV.60.BH3
+
+# ====================================================================
+# DETTAGLIO RICHIESTE
+# ====================================================================
+
+# [01] Ricerca canali IU.ANMO (station, level=channel)
+#      HTTP 200 - 1,042 bytes
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=ANMO&loc=*&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=channel&format=text&nodata=404
+
+# [02] StationXML IU.ANMO.00 (station, level=response)
+#      HTTP 200 - 24,652 bytes
+#      salvato in: seismic_data/IU_ANMO/IU_ANMO_00_StationXML.xml
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=ANMO&loc=00&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+
+# [03] StationXML IU.ANMO.10 (station, level=response)
+#      HTTP 200 - 22,723 bytes
+#      salvato in: seismic_data/IU_ANMO/IU_ANMO_10_StationXML.xml
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=ANMO&loc=10&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+
+# [04] Waveform IU.ANMO.00.BH1 (dataselect, miniSEED)
+#      HTTP 200 - 326,144 bytes
+#      salvato in: seismic_data/IU_ANMO/IU_ANMO_00_BH1.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [05] Waveform IU.ANMO.00.BH2 (dataselect, miniSEED)
+#      HTTP 200 - 325,632 bytes
+#      salvato in: seismic_data/IU_ANMO/IU_ANMO_00_BH2.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [06] Waveform IU.ANMO.00.BHZ (dataselect, miniSEED)
+#      HTTP 200 - 335,872 bytes
+#      salvato in: seismic_data/IU_ANMO/IU_ANMO_00_BHZ.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [07] Waveform IU.ANMO.10.BH1 (dataselect, miniSEED)
+#      HTTP 200 - 343,040 bytes
+#      salvato in: seismic_data/IU_ANMO/IU_ANMO_10_BH1.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=10&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [08] Waveform IU.ANMO.10.BH2 (dataselect, miniSEED)
+#      HTTP 200 - 343,552 bytes
+#      salvato in: seismic_data/IU_ANMO/IU_ANMO_10_BH2.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=10&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [09] Waveform IU.ANMO.10.BHZ (dataselect, miniSEED)
+#      HTTP 200 - 353,280 bytes
+#      salvato in: seismic_data/IU_ANMO/IU_ANMO_10_BHZ.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=10&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [10] Waveform IU.ANMO.00.BH3 (dataselect, miniSEED)
+#      HTTP 404 - 377 bytes
+#      nota: nessun dato disponibile
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH3&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [11] Waveform IU.ANMO.10.BH3 (dataselect, miniSEED)
+#      HTTP 404 - 377 bytes
+#      nota: nessun dato disponibile
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=10&cha=BH3&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [12] Ricerca canali IU.TUC (station, level=channel)
+#      HTTP 200 - 1,453 bytes
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=TUC&loc=*&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=channel&format=text&nodata=404
+
+# [13] StationXML IU.TUC.00 (station, level=response)
+#      HTTP 200 - 32,169 bytes
+#      salvato in: seismic_data/IU_TUC/IU_TUC_00_StationXML.xml
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=TUC&loc=00&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+
+# [14] StationXML IU.TUC.10 (station, level=response)
+#      HTTP 200 - 31,110 bytes
+#      salvato in: seismic_data/IU_TUC/IU_TUC_10_StationXML.xml
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=TUC&loc=10&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+
+# [15] StationXML IU.TUC.60 (station, level=response)
+#      HTTP 200 - 33,998 bytes
+#      salvato in: seismic_data/IU_TUC/IU_TUC_60_StationXML.xml
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=TUC&loc=60&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+
+# [16] Waveform IU.TUC.00.BH1 (dataselect, miniSEED)
+#      HTTP 200 - 335,872 bytes
+#      salvato in: seismic_data/IU_TUC/IU_TUC_00_BH1.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019539Z -> 2020-10-19T22:19:59.994539Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=00&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [17] Waveform IU.TUC.00.BH2 (dataselect, miniSEED)
+#      HTTP 200 - 337,408 bytes
+#      salvato in: seismic_data/IU_TUC/IU_TUC_00_BH2.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=00&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [18] Waveform IU.TUC.00.BHZ (dataselect, miniSEED)
+#      HTTP 200 - 340,992 bytes
+#      salvato in: seismic_data/IU_TUC/IU_TUC_00_BHZ.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019539Z -> 2020-10-19T22:19:59.994539Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=00&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [19] Waveform IU.TUC.10.BH1 (dataselect, miniSEED)
+#      HTTP 200 - 354,816 bytes
+#      salvato in: seismic_data/IU_TUC/IU_TUC_10_BH1.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=10&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [20] Waveform IU.TUC.10.BH2 (dataselect, miniSEED)
+#      HTTP 200 - 356,352 bytes
+#      salvato in: seismic_data/IU_TUC/IU_TUC_10_BH2.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=10&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [21] Waveform IU.TUC.10.BHZ (dataselect, miniSEED)
+#      HTTP 200 - 359,424 bytes
+#      salvato in: seismic_data/IU_TUC/IU_TUC_10_BHZ.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=10&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [22] Waveform IU.TUC.60.BH1 (dataselect, miniSEED)
+#      HTTP 200 - 171,008 bytes
+#      salvato in: seismic_data/IU_TUC/IU_TUC_60_BH1.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.969538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=60&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [23] Waveform IU.TUC.60.BH2 (dataselect, miniSEED)
+#      HTTP 200 - 173,056 bytes
+#      salvato in: seismic_data/IU_TUC/IU_TUC_60_BH2.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.969538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=60&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [24] Waveform IU.TUC.60.BHZ (dataselect, miniSEED)
+#      HTTP 200 - 181,248 bytes
+#      salvato in: seismic_data/IU_TUC/IU_TUC_60_BHZ.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.969538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=60&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [25] Waveform IU.TUC.00.BH3 (dataselect, miniSEED)
+#      HTTP 404 - 376 bytes
+#      nota: nessun dato disponibile
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=00&cha=BH3&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [26] Waveform IU.TUC.10.BH3 (dataselect, miniSEED)
+#      HTTP 404 - 376 bytes
+#      nota: nessun dato disponibile
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=10&cha=BH3&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [27] Waveform IU.TUC.60.BH3 (dataselect, miniSEED)
+#      HTTP 404 - 376 bytes
+#      nota: nessun dato disponibile
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=60&cha=BH3&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [28] Ricerca canali IU.HRV (station, level=channel)
+#      HTTP 200 - 1,447 bytes
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=HRV&loc=*&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=channel&format=text&nodata=404
+
+# [29] StationXML IU.HRV.00 (station, level=response)
+#      HTTP 200 - 33,125 bytes
+#      salvato in: seismic_data/IU_HRV/IU_HRV_00_StationXML.xml
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=HRV&loc=00&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+
+# [30] StationXML IU.HRV.10 (station, level=response)
+#      HTTP 200 - 29,872 bytes
+#      salvato in: seismic_data/IU_HRV/IU_HRV_10_StationXML.xml
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=HRV&loc=10&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+
+# [31] StationXML IU.HRV.60 (station, level=response)
+#      HTTP 200 - 31,819 bytes
+#      salvato in: seismic_data/IU_HRV/IU_HRV_60_StationXML.xml
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=HRV&loc=60&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+
+# [32] Waveform IU.HRV.00.BH1 (dataselect, miniSEED)
+#      HTTP 200 - 219,136 bytes
+#      salvato in: seismic_data/IU_HRV/IU_HRV_00_BH1.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.969538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [33] Waveform IU.HRV.00.BH2 (dataselect, miniSEED)
+#      HTTP 200 - 221,696 bytes
+#      salvato in: seismic_data/IU_HRV/IU_HRV_00_BH2.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.969538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [34] Waveform IU.HRV.00.BHZ (dataselect, miniSEED)
+#      HTTP 200 - 231,936 bytes
+#      salvato in: seismic_data/IU_HRV/IU_HRV_00_BHZ.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.969538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [35] Waveform IU.HRV.10.BH1 (dataselect, miniSEED)
+#      HTTP 200 - 370,688 bytes
+#      salvato in: seismic_data/IU_HRV/IU_HRV_10_BH1.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=10&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [36] Waveform IU.HRV.10.BH2 (dataselect, miniSEED)
+#      HTTP 200 - 378,880 bytes
+#      salvato in: seismic_data/IU_HRV/IU_HRV_10_BH2.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=10&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [37] Waveform IU.HRV.10.BHZ (dataselect, miniSEED)
+#      HTTP 200 - 375,296 bytes
+#      salvato in: seismic_data/IU_HRV/IU_HRV_10_BHZ.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=10&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [38] Waveform IU.HRV.60.BH1 (dataselect, miniSEED)
+#      HTTP 200 - 267,776 bytes
+#      salvato in: seismic_data/IU_HRV/IU_HRV_60_BH1.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=60&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [39] Waveform IU.HRV.60.BH2 (dataselect, miniSEED)
+#      HTTP 200 - 272,896 bytes
+#      salvato in: seismic_data/IU_HRV/IU_HRV_60_BH2.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=60&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [40] Waveform IU.HRV.60.BHZ (dataselect, miniSEED)
+#      HTTP 200 - 272,384 bytes
+#      salvato in: seismic_data/IU_HRV/IU_HRV_60_BHZ.mseed
+#      miniSEED: continuo 2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=60&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [41] Waveform IU.HRV.00.BH3 (dataselect, miniSEED)
+#      HTTP 404 - 376 bytes
+#      nota: nessun dato disponibile
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH3&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [42] Waveform IU.HRV.10.BH3 (dataselect, miniSEED)
+#      HTTP 404 - 376 bytes
+#      nota: nessun dato disponibile
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=10&cha=BH3&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# [43] Waveform IU.HRV.60.BH3 (dataselect, miniSEED)
+#      HTTP 404 - 376 bytes
+#      nota: nessun dato disponibile
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=60&cha=BH3&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+
+# ====================================================================
+# ELENCO URL (solo richieste riuscite, uno per riga)
+# ====================================================================
+
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=ANMO&loc=*&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=channel&format=text&nodata=404
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=ANMO&loc=00&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=ANMO&loc=10&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=00&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=10&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=10&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=ANMO&loc=10&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=TUC&loc=*&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=channel&format=text&nodata=404
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=TUC&loc=00&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=TUC&loc=10&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=TUC&loc=60&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=00&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=00&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=00&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=10&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=10&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=10&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=60&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=60&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=TUC&loc=60&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=HRV&loc=*&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=channel&format=text&nodata=404
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=HRV&loc=00&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=HRV&loc=10&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+https://service.earthscope.org/fdsnws/station/1/query?net=IU&sta=HRV&loc=60&cha=BH?&starttime=2020-10-19T20:54:00&endtime=2020-10-19T22:20:00&level=response&format=xml&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=00&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=10&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=10&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=10&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=60&cha=BH1&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=60&cha=BH2&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
+https://service.earthscope.org/fdsnws/dataselect/1/query?net=IU&sta=HRV&loc=60&cha=BHZ&start=2020-10-19T20:54:00&end=2020-10-19T22:20:00&format=miniseed&nodata=404
