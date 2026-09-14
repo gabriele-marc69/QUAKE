@@ -14,6 +14,9 @@ produce figure e un'animazione 3D della propagazione.
 | `Download dati sismici M7.6 Alaska 19 ottobre 2020.py` | Scarica miniSEED continui (BH1/BH2/BHZ; BH3 richiesto ma non esistente per queste stazioni, viene segnalato) e StationXML per IU.ANMO, IU.TUC, IU.HRV, 19/10/2020 20:54–22:20 UTC, dai servizi FDSN EarthScope; verifica la continuità di ogni traccia e salva gli URL usati in `seismic_data/download_urls.txt` |
 | `analisi_polarizzazione.py` | Rimozione risposta strumentale, rotazione ZNE→ZRT, filtro 20–100 s, finestre Love/Rayleigh, misura di sfasamento Z–R, ellitticità H/V, senso di rotazione, energia T/(R+Z) |
 | `animazione_onde.py` | Animazione 3D: globo con fronti d'onda P/S/Love/Rayleigh, moto del suolo per stazione, inviluppo di energia |
+| `ricalcolo_protocollo_v1.py` | Ricalcolo secondo il protocollo v1.0 del brief di A. Rampado (11/09/2026, documento non incluso nel repository): BH1/BH2/BHZ → Z/R/T, banda 0,03–0,10 Hz, finestra 2,6–3,6 km/s, cresta con media mobile 60 s, ellitticità R–Z, energia trasversa, Q, distanza dai bordi. Formula di Q, soglie e margine di bordo non sono nel brief: sono **provvisori** (vedi `parametri.json`) |
+| `protocollo_v1_sand_point/consegna/` | I sei file richiesti dal brief (per stazione: miniSEED BH1+BH2+BHZ grezzo, location 00, + StationXML) con `MANIFEST.txt` (SHA-256) |
+| `protocollo_v1_sand_point/analisi/` | `report.txt`, `risultati.csv`, `parametri.json`, `figura_protocollo_v1.png` |
 | `seismic_data/` | Dati grezzi scaricati (miniSEED + StationXML) e `download_urls.txt` con tutti gli URL FDSN richiesti (esito HTTP, dimensione, file di destinazione) |
 | `risultati_polarizzazione/` | Figure PNG, GIF animata e `report.txt` con i risultati numerici |
 

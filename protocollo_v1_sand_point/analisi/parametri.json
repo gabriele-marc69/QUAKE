@@ -1,0 +1,38 @@
+{
+  "regole_congelate_v1.0": {
+    "canali": [
+      "BH1",
+      "BH2",
+      "BHZ"
+    ],
+    "banda_hz": [
+      0.03,
+      0.1
+    ],
+    "finestra_velocita_kms": [
+      2.6,
+      3.6
+    ],
+    "media_mobile_s": 60.0
+  },
+  "parametri_provvisori": {
+    "location": "00 (sensore primario GSN)",
+    "risposta_strumentale": "rimossa -> velocita' (m/s), pre_filt (0.01, 0.02, 0.2, 0.4) Hz",
+    "curva_energia_cresta": "R^2 + Z^2, media mobile 60 s (regola v1.0)",
+    "segmento_metriche": "cresta +/- 60 s, dentro la finestra",
+    "margine_bordo_s": 60.0,
+    "sfasamento_retrogrado_deg": [
+      -120.0,
+      -60.0
+    ],
+    "max_frazione_energia_T": 0.5,
+    "min_Q": 0.5,
+    "formula_Q": "coerenza di fase Z-R x |sin(dphi)| x (1 - E_T/E_tot)",
+    "classi": {
+      "replica interna": "metriche favorevoli e distanza dal bordo >= margine",
+      "marginale": "metriche favorevoli ma distanza dal bordo < margine",
+      "non replica": "dati validi ma metriche non favorevoli",
+      "non classificabile": "verifica dei dati fallita o finestra fuori copertura"
+    }
+  }
+}

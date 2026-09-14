@@ -1,0 +1,4 @@
+sta,dist_km,deg,baz,w0,w1,tc,t_cresta_utc,v_cresta,edge,dphi,coherence,hv,frac_t,q,senso,classe,motivo
+ANMO,4602.5749,41.3920,315.3600,1278.4930,1770.2211,1428.1695,2020-10-19T21:18:27.169538Z,3.2227,149.6765,-105.0852,0.9678,0.9688,0.1916,0.7554,retrogrado,replica interna,"metriche favorevoli, cresta a 150 s dal bordo"
+TUC,4539.7959,40.8274,318.0447,1261.0544,1746.0753,1326.8945,2020-10-19T21:16:45.894539Z,3.4214,65.8401,-96.6349,0.9699,0.6749,0.4243,0.5546,retrogrado,replica interna,"metriche favorevoli, cresta a 66 s dal bordo"
+HRV,6198.2076,55.7418,315.4911,1721.7243,2383.9260,2041.3195,2020-10-19T21:28:40.319538Z,3.0364,319.5952,-91.8696,0.9857,0.7937,0.3013,0.6883,retrogrado,replica interna,"metriche favorevoli, cresta a 320 s dal bordo"

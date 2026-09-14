@@ -1,0 +1,48 @@
+RICALCOLO PROTOCOLLO v1.0 - M7.6 Sand Point, Alaska - 2020-10-19 20:54:39 UTC
+Skill: rampado-protocollo-polarizzazione-rz (brief A. Rampado, 11/09/2026)
+
+Regole congelate: BH1/BH2/BHZ + StationXML; rotazione Z/R/T; banda 0,03-0,10 Hz;
+finestra 2,6-3,6 km/s; cresta con media mobile 60 s; ellitticita' R-Z,
+energia trasversa, punteggio Q, distanza dai bordi.
+
+ATTENZIONE: formula di Q, soglie, margine di bordo, rimozione della risposta e
+location NON sono definiti nel brief. Qui sono PROVVISORI (analisi/parametri.json).
+La classificazione ufficiale spetta al catalog runner v1.0.
+
+VERIFICA DELLA CONSEGNA (componenti, orari, risposta, continuita')
+IU.ANMO: OK
+    IU.ANMO.00.BH1  2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z  40 Hz  206400 campioni  risposta OK
+    IU.ANMO.00.BH2  2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z  40 Hz  206400 campioni  risposta OK
+    IU.ANMO.00.BHZ  2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z  40 Hz  206400 campioni  risposta OK
+IU.TUC: OK
+    IU.TUC.00.BH1  2020-10-19T20:54:00.019539Z -> 2020-10-19T22:19:59.994539Z  40 Hz  206400 campioni  risposta OK
+    IU.TUC.00.BH2  2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.994538Z  40 Hz  206400 campioni  risposta OK
+    IU.TUC.00.BHZ  2020-10-19T20:54:00.019539Z -> 2020-10-19T22:19:59.994539Z  40 Hz  206400 campioni  risposta OK
+IU.HRV: OK
+    IU.HRV.00.BH1  2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.969538Z  20 Hz  103200 campioni  risposta OK
+    IU.HRV.00.BH2  2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.969538Z  20 Hz  103200 campioni  risposta OK
+    IU.HRV.00.BHZ  2020-10-19T20:54:00.019538Z -> 2020-10-19T22:19:59.969538Z  20 Hz  103200 campioni  risposta OK
+
+RISULTATI
+IU.ANMO: REPLICA INTERNA - metriche favorevoli, cresta a 150 s dal bordo
+  Δ=41.4° (4603 km)  BAZ=315°  finestra 1278-1770 s
+  cresta 1428 s (21:18:27 UTC, 3.22 km/s)  distanza dal bordo 150 s
+  ellitticita' R-Z: Δφ(Z-R)=-105.1° (retrogrado)  H/V=0.97  coerenza di fase=0.97
+  energia trasversa E_T/E_tot=0.19  Q=0.76
+
+IU.TUC: REPLICA INTERNA - metriche favorevoli, cresta a 66 s dal bordo
+  Δ=40.8° (4540 km)  BAZ=318°  finestra 1261-1746 s
+  cresta 1327 s (21:16:45 UTC, 3.42 km/s)  distanza dal bordo 66 s
+  ellitticita' R-Z: Δφ(Z-R)=-96.6° (retrogrado)  H/V=0.67  coerenza di fase=0.97
+  energia trasversa E_T/E_tot=0.42  Q=0.55
+
+IU.HRV: REPLICA INTERNA - metriche favorevoli, cresta a 320 s dal bordo
+  Δ=55.7° (6198 km)  BAZ=315°  finestra 1722-2384 s
+  cresta 2041 s (21:28:40 UTC, 3.04 km/s)  distanza dal bordo 320 s
+  ellitticita' R-Z: Δφ(Z-R)=-91.9° (retrogrado)  H/V=0.79  coerenza di fase=0.99
+  energia trasversa E_T/E_tot=0.30  Q=0.69
+
+RIEPILOGO: 3 replica interna
+
+Il risultato descrive una polarizzazione coerente (o no) con onde di
+superficie di Rayleigh; non dimostra nuova fisica.
